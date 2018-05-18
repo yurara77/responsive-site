@@ -25,10 +25,11 @@ body
     background-color: #f5e8ea;
 }
 
-@media (max-width: 768px) {
-   header {
-       height: 250px;
-   }
+@media (max-width: 768px) {    /* screen sizes for under 768px */
+    /* selector */ {
+        height: 250px;
+        width:100%;
+    }
 }
 
 a
@@ -122,6 +123,7 @@ section h2
     display: -webkit-flex;
     display:         flex;
     justify-content: space-between;
+    flex-direction: column
 }
 #skills h2
 {
@@ -166,7 +168,6 @@ section h2
     margin-bottom: 10px;
     color: #f5e8ea;
 }
-
 
 .button {
     width: 300px;
