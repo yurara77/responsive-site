@@ -25,13 +25,6 @@ body
     background-color: #f5e8ea;
 }
 
-@media (max-width: 768px) {    /* screen sizes for under 768px */
-    /* selector */ {
-        height: 250px;
-        width:100%;
-    }
-}
-
 a
 {
     text-decoration: none;
@@ -123,7 +116,6 @@ section h2
     display: -webkit-flex;
     display:         flex;
     justify-content: space-between;
-    flex-direction: column
 }
 #skills h2
 {
@@ -137,7 +129,7 @@ section h2
             box-sizing: border-box;
     -webkit-flex: 1;
             flex: 1;
-    margin: 0px 10px;
+    margin: 0px 10px 20px;
     padding: 20px;
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
@@ -193,4 +185,13 @@ footer
     text-align: center;
     color: #fff;
     background-color: #bd97c8;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 250px;
+    }
+    #skills .container {
+        display: block;
+    }
 }
